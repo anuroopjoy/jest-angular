@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "My App",
+        "type": "node",
+        "request": "launch",
+        "runtimeArgs": [
+          "--inspect-brk",
+          "./node_modules/jest/bin/jest.js",
+          "--runInBand",
+          "--config",
+          "./jest.config.js",
+          "${fileBasenameNoExtension}"
+        ],
+        "console": "externalTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }
+  
